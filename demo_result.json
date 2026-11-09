@@ -1,0 +1,968 @@
+{
+  "contract": "0x8FcE3984717067A50562fF8ab300f636BAF7A905",
+  "network": "studionet",
+  "created": 1794186587,
+  "audits": [
+    {
+      "label": "sol-only",
+      "account": "0xfb8c34145bdea190693325d0ab01e81120909b3f",
+      "from": 1793577600,
+      "to": 1794182400,
+      "text": "솔라나만 거래하고 롱만 하기로 했습니다. 레버리지는 3배 이하로 유지.",
+      "tx": {
+        "hash": "0xeccdbd82af6957920b7ec879e0758a72868f8e514cf27ca59549b34df79dd353",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "AGREE",
+          "DISAGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "0",
+        "message": "{\"readable\":\"{\\\"account\\\":\\\"0xfb8c34145bdea190693325d0ab01e81120909b3f\\\"\\\"audit_id\\\":0\\\"breaches\\\":[{\\\"coin\\\":\\\"HYPE\\\"\\\"rule\\\":\\\"coins_allowed\\\"\\\"time\\\":1793577600062},{\\\"coin\\\":\\\"XMR\\\"\\\"rule\\\":\\\"coins_allowed\\\"\\\"time\\\":1793577600062},{\\\"coin\\\":\\\"xyz:JPY\\\"\\\"rule\\\":\\\"coins_allowed\\\"\\\"time\\\":1793577600062},{\\\"coin\\\":\\\"HYPE\\\"\\\"rule\\\":\\\"direction\\\"\\\"time\\\":1793577600062\\\"went\\\":\\\"short\\\"},{\\\"coin\\\":\\\"XMR\\\"\\\"rule\\\":\\\"direction\\\"\\\"time\\\":1793577600062\\\"went\\\":\\\"short\\\"},]\\\"from\\\":1793577600\\\"mandate\\\":\\\"솔라나만 거래하고 롱만 하기로 했습니다. 레버리지는 3배 이하로 유지.\\\"\\\"report\\\":{\\\"account\\\":\\\"0xfb8c34145bdea190693325d0ab01e81120909b3f\\\"\\\"closed_pnl\\\":\\\"196.674850\\\"\\\"coins\\\":{\\\"HYPE\\\":1793577600062\\\"SOL\\\":1793641587337\\\"XMR\\\":1793577600062\\\"xyz:JPY\\\":1793577600062}\\\"fees\\\":\\\"33.123805\\\"\\\"fills\\\":15\\\"first_long\\\":{\\\"SOL\\"
+      },
+      "stored": {
+        "account": "0xfb8c34145bdea190693325d0ab01e81120909b3f",
+        "breaches": [
+          {
+            "coin": "HYPE",
+            "rule": "coins_allowed",
+            "time": 1793577600062
+          },
+          {
+            "coin": "XMR",
+            "rule": "coins_allowed",
+            "time": 1793577600062
+          },
+          {
+            "coin": "xyz:JPY",
+            "rule": "coins_allowed",
+            "time": 1793577600062
+          },
+          {
+            "coin": "HYPE",
+            "rule": "direction",
+            "time": 1793577600062,
+            "went": "short"
+          },
+          {
+            "coin": "XMR",
+            "rule": "direction",
+            "time": 1793577600062,
+            "went": "short"
+          }
+        ],
+        "from": 1793577600,
+        "mandate": "솔라나만 거래하고 롱만 하기로 했습니다. 레버리지는 3배 이하로 유지.",
+        "report_cached": false,
+        "rules": {
+          "coins_allowed": [
+            "SOL"
+          ],
+          "coins_forbidden": [],
+          "direction": "long_only",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "to": 1794182400,
+        "unenforceable": [
+          "Leverage limit cannot be verified from public fills"
+        ]
+      },
+      "report": {
+        "account": "0xfb8c34145bdea190693325d0ab01e81120909b3f",
+        "closed_pnl": "196.674850",
+        "coins": {
+          "HYPE": 1793577600062,
+          "SOL": 1793641587337,
+          "XMR": 1793577600062,
+          "xyz:JPY": 1793577600062
+        },
+        "fees": "33.123805",
+        "fills": 15,
+        "first_long": {
+          "SOL": 1793641587337,
+          "xyz:JPY": 1793577600062
+        },
+        "first_short": {
+          "HYPE": 1793577600062,
+          "XMR": 1793577600062
+        },
+        "from": 1793577600,
+        "funding": "2540.519749",
+        "funding_payments": 468,
+        "markets": [
+          "perp",
+          "hip3"
+        ],
+        "max_drawdown": "22.581543",
+        "max_position": {
+          "SOL": [
+            "61392.877520",
+            1793645461742
+          ]
+        },
+        "net_pnl": "2704.070794",
+        "non_usdc_fee_fills": 0,
+        "open_at_end": [
+          "HYPE",
+          "XMR",
+          "xyz:JPY"
+        ],
+        "to": 1794182400
+      }
+    },
+    {
+      "label": "crypto-only",
+      "account": "0x45552df9027f5cdacf3bc48b9cebd75d10583deb",
+      "from": 1793577600,
+      "to": 1794182400,
+      "text": "Crypto perps only. No stock or commodity perps. Long or short is fine.",
+      "tx": {
+        "hash": "0x6931a350543c465294f4f3a0062a0bafa814ddc1066bbdd6e9dd07fa85736f0f",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"account\\\":\\\"0x45552df9027f5cdacf3bc48b9cebd75d10583deb\\\"\\\"audit_id\\\":1\\\"breaches\\\":[{\\\"coin\\\":\\\"xyz:GOOGL\\\"\\\"market\\\":\\\"hip3\\\"\\\"rule\\\":\\\"markets\\\"\\\"time\\\":1793801958412},{\\\"coin\\\":\\\"xyz:INTC\\\"\\\"market\\\":\\\"hip3\\\"\\\"rule\\\":\\\"markets\\\"\\\"time\\\":1793629128305},{\\\"coin\\\":\\\"xyz:NVDA\\\"\\\"market\\\":\\\"hip3\\\"\\\"rule\\\":\\\"markets\\\"\\\"time\\\":1793895783903},]\\\"from\\\":1793577600\\\"mandate\\\":\\\"Crypto perps only. No stock or commodity perps. Long or short is fine.\\\"\\\"report\\\":{\\\"account\\\":\\\"0x45552df9027f5cdacf3bc48b9cebd75d10583deb\\\"\\\"closed_pnl\\\":\\\"3817.444273\\\"\\\"coins\\\":{\\\"BTC\\\":1793977878059\\\"xyz:GOOGL\\\":1793801958412\\\"xyz:INTC\\\":1793629128305\\\"xyz:NVDA\\\":1793895783903}\\\"fees\\\":\\\"172.496028\\\"\\\"fills\\\":88\\\"first_long\\\":{\\\"BTC\\\":1793977878059\\\"xyz:GOOGL\\\":1793801958412\\\"xyz:INTC\\\":1793629128305\\"
+      },
+      "stored": {
+        "account": "0x45552df9027f5cdacf3bc48b9cebd75d10583deb",
+        "breaches": [
+          {
+            "coin": "xyz:GOOGL",
+            "market": "hip3",
+            "rule": "markets",
+            "time": 1793801958412
+          },
+          {
+            "coin": "xyz:INTC",
+            "market": "hip3",
+            "rule": "markets",
+            "time": 1793629128305
+          },
+          {
+            "coin": "xyz:NVDA",
+            "market": "hip3",
+            "rule": "markets",
+            "time": 1793895783903
+          }
+        ],
+        "from": 1793577600,
+        "mandate": "Crypto perps only. No stock or commodity perps. Long or short is fine.",
+        "report_cached": false,
+        "rules": {
+          "coins_allowed": null,
+          "coins_forbidden": [],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "to": 1794182400,
+        "unenforceable": []
+      },
+      "report": {
+        "account": "0x45552df9027f5cdacf3bc48b9cebd75d10583deb",
+        "closed_pnl": "3817.444273",
+        "coins": {
+          "BTC": 1793977878059,
+          "xyz:GOOGL": 1793801958412,
+          "xyz:INTC": 1793629128305,
+          "xyz:NVDA": 1793895783903
+        },
+        "fees": "172.496028",
+        "fills": 88,
+        "first_long": {
+          "BTC": 1793977878059,
+          "xyz:GOOGL": 1793801958412,
+          "xyz:INTC": 1793629128305,
+          "xyz:NVDA": 1793895783903
+        },
+        "first_short": {},
+        "from": 1793577600,
+        "funding": "-251.195223",
+        "funding_payments": 123,
+        "markets": [
+          "perp",
+          "hip3"
+        ],
+        "max_drawdown": "1029.997479",
+        "max_position": {
+          "BTC": [
+            "151836.000000",
+            1794060659102
+          ],
+          "xyz:GOOGL": [
+            "149553.807300",
+            1793801958412
+          ],
+          "xyz:INTC": [
+            "50522.973630",
+            1793629128305
+          ],
+          "xyz:NVDA": [
+            "103163.668800",
+            1793975531567
+          ]
+        },
+        "net_pnl": "3393.753022",
+        "non_usdc_fee_fills": 0,
+        "open_at_end": [],
+        "to": 1794182400
+      }
+    },
+    {
+      "label": "no-shorts",
+      "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+      "from": 1793750400,
+      "to": 1793836800,
+      "text": "비트, 이더, 솔만. 숏은 금지.",
+      "tx": {
+        "hash": "0x7d45143122558b25948b295b31b918d35288793b5a86aac061a18ee495157e40",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "IDLE",
+          "AGREE",
+          "AGREE"
+        ],
+        "rotations_left": "2",
+        "message": "{\"readable\":\"{\\\"account\\\":\\\"0xe65123c903700a65068f6a85c6f98519303bae41\\\"\\\"audit_id\\\":2\\\"breaches\\\":[{\\\"coin\\\":\\\"SOL\\\"\\\"rule\\\":\\\"direction\\\"\\\"time\\\":1793805295019\\\"went\\\":\\\"short\\\"},]\\\"from\\\":1793750400\\\"mandate\\\":\\\"비트, 이더, 솔만. 숏은 금지.\\\"\\\"report\\\":{\\\"account\\\":\\\"0xe65123c903700a65068f6a85c6f98519303bae41\\\"\\\"closed_pnl\\\":\\\"14984.637430\\\"\\\"coins\\\":{\\\"SOL\\\":1793761479486}\\\"fees\\\":\\\"371.613827\\\"\\\"fills\\\":301\\\"first_long\\\":{\\\"SOL\\\":1793761479486}\\\"first_short\\\":{\\\"SOL\\\":1793805295019}\\\"from\\\":1793750400\\\"funding\\\":\\\"-2.805574\\\"\\\"funding_payments\\\":22\\\"markets\\\":[\\\"perp\\\",]\\\"max_drawdown\\\":\\\"114.209500\\\"\\\"max_position\\\":{\\\"SOL\\\":[\\\"253994.000000\\\",1793805408489,]}\\\"net_pnl\\\":\\\"14610.218029\\\"\\\"non_usdc_fee_fills\\\":0\\\"open_at_end\\\":[]\\\"to\\\":1793836800}\\\"report_cached\\\":false\\\"rules\\\":{\\\"coins_allowe"
+      },
+      "stored": {
+        "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+        "breaches": [
+          {
+            "coin": "SOL",
+            "rule": "direction",
+            "time": 1793805295019,
+            "went": "short"
+          }
+        ],
+        "from": 1793750400,
+        "mandate": "비트, 이더, 솔만. 숏은 금지.",
+        "report_cached": false,
+        "rules": {
+          "coins_allowed": [
+            "BTC",
+            "ETH",
+            "SOL"
+          ],
+          "coins_forbidden": [],
+          "direction": "long_only",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "to": 1793836800,
+        "unenforceable": []
+      },
+      "report": {
+        "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+        "closed_pnl": "14984.637430",
+        "coins": {
+          "SOL": 1793761479486
+        },
+        "fees": "371.613827",
+        "fills": 301,
+        "first_long": {
+          "SOL": 1793761479486
+        },
+        "first_short": {
+          "SOL": 1793805295019
+        },
+        "from": 1793750400,
+        "funding": "-2.805574",
+        "funding_payments": 22,
+        "markets": [
+          "perp"
+        ],
+        "max_drawdown": "114.209500",
+        "max_position": {
+          "SOL": [
+            "253994.000000",
+            1793805408489
+          ]
+        },
+        "net_pnl": "14610.218029",
+        "non_usdc_fee_fills": 0,
+        "open_at_end": [],
+        "to": 1793836800
+      }
+    },
+    {
+      "label": "no-shorts-next-day",
+      "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+      "from": 1793836800,
+      "to": 1793923200,
+      "text": "비트, 이더, 솔만. 숏은 금지.",
+      "tx": {
+        "hash": "0xe7e27d64b834a8909707ad1f20214207f59349d39f4b4404e498b94bd93bd575",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "IDLE",
+          "AGREE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"account\\\":\\\"0xe65123c903700a65068f6a85c6f98519303bae41\\\"\\\"audit_id\\\":3\\\"breaches\\\":[]\\\"from\\\":1793836800\\\"mandate\\\":\\\"비트, 이더, 솔만. 숏은 금지.\\\"\\\"report\\\":{\\\"account\\\":\\\"0xe65123c903700a65068f6a85c6f98519303bae41\\\"\\\"closed_pnl\\\":\\\"0.000000\\\"\\\"coins\\\":{\\\"BTC\\\":1793887220219\\\"ETH\\\":1793892543552\\\"SOL\\\":1793906120761}\\\"fees\\\":\\\"2055.581748\\\"\\\"fills\\\":462\\\"first_long\\\":{\\\"BTC\\\":1793887220219\\\"ETH\\\":1793892543552\\\"SOL\\\":1793906120761}\\\"first_short\\\":{}\\\"from\\\":1793836800\\\"funding\\\":\\\"-351.153039\\\"\\\"funding_payments\\\":21\\\"markets\\\":[\\\"perp\\\",]\\\"max_drawdown\\\":\\\"2406.734787\\\"\\\"max_position\\\":{\\\"BTC\\\":[\\\"2698325.000000\\\",1793891706538,]\\\"ETH\\\":[\\\"1325807.118000\\\",1793920466307,]\\\"SOL\\\":[\\\"486953.500000\\\",1793920809734,]}\\\"net_pnl\\\":\\\"-2406.734787\\\"\\\"non_usdc_fee_fills\\\":0\\\"open_at_end\\\":"
+      },
+      "stored": {
+        "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+        "breaches": [],
+        "from": 1793836800,
+        "mandate": "비트, 이더, 솔만. 숏은 금지.",
+        "report_cached": false,
+        "rules": {
+          "coins_allowed": [
+            "BTC",
+            "ETH",
+            "SOL"
+          ],
+          "coins_forbidden": [],
+          "direction": "long_only",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "to": 1793923200,
+        "unenforceable": []
+      },
+      "report": {
+        "account": "0xe65123c903700a65068f6a85c6f98519303bae41",
+        "closed_pnl": "0.000000",
+        "coins": {
+          "BTC": 1793887220219,
+          "ETH": 1793892543552,
+          "SOL": 1793906120761
+        },
+        "fees": "2055.581748",
+        "fills": 462,
+        "first_long": {
+          "BTC": 1793887220219,
+          "ETH": 1793892543552,
+          "SOL": 1793906120761
+        },
+        "first_short": {},
+        "from": 1793836800,
+        "funding": "-351.153039",
+        "funding_payments": 21,
+        "markets": [
+          "perp"
+        ],
+        "max_drawdown": "2406.734787",
+        "max_position": {
+          "BTC": [
+            "2698325.000000",
+            1793891706538
+          ],
+          "ETH": [
+            "1325807.118000",
+            1793920466307
+          ],
+          "SOL": [
+            "486953.500000",
+            1793920809734
+          ]
+        },
+        "net_pnl": "-2406.734787",
+        "non_usdc_fee_fills": 0,
+        "open_at_end": [
+          "BTC",
+          "ETH",
+          "SOL"
+        ],
+        "to": 1793923200
+      }
+    },
+    {
+      "label": "drawdown",
+      "account": "0x7fdb5021d8e2d5ed85b7f66cb742d496af32259c",
+      "from": 1793577600,
+      "to": 1794182400,
+      "text": "Any coin except HYPE. Stop trading if realized losses reach $5,000 from the high.",
+      "tx": {
+        "hash": "0x96c1b0f996d9a3d9f7f05754a37f7855cbd5f08e39a4929e1a3bf03b24d30e87",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"account\\\":\\\"0x7fdb5021d8e2d5ed85b7f66cb742d496af32259c\\\"\\\"audit_id\\\":4\\\"breaches\\\":[{\\\"coin\\\":\\\"HYPE\\\"\\\"rule\\\":\\\"coins_forbidden\\\"\\\"time\\\":1793916064489},{\\\"rule\\\":\\\"max_drawdown_usd\\\"\\\"usd\\\":\\\"22962.563384\\\"},]\\\"from\\\":1793577600\\\"mandate\\\":\\\"Any coin except HYPE. Stop trading if realized losses reach $5,000 from the high.\\\"\\\"report\\\":{\\\"account\\\":\\\"0x7fdb5021d8e2d5ed85b7f66cb742d496af32259c\\\"\\\"closed_pnl\\\":\\\"-21727.467270\\\"\\\"coins\\\":{\\\"DOT\\\":1793665829920\\\"HYPE\\\":1793916064489\\\"NEAR\\\":1793626698259\\\"SOL\\\":1793626680770\\\"SUI\\\":1793637195010\\\"TIA\\\":1793665461523\\\"UNI\\\":1793637210409\\\"xyz:GOOGL\\\":1793912172785\\\"xyz:SNDK\\\":1793665412009}\\\"fees\\\":\\\"43.492475\\\"\\\"fills\\\":114\\\"first_long\\\":{\\\"HYPE\\\":1793916064489\\\"xyz:GOOGL\\\":1793912172785\\\"xyz:SNDK\\\":1793665412009}\\\"first_short\\"
+      },
+      "stored": {
+        "account": "0x7fdb5021d8e2d5ed85b7f66cb742d496af32259c",
+        "breaches": [
+          {
+            "coin": "HYPE",
+            "rule": "coins_forbidden",
+            "time": 1793916064489
+          },
+          {
+            "rule": "max_drawdown_usd",
+            "usd": "22962.563384"
+          }
+        ],
+        "from": 1793577600,
+        "mandate": "Any coin except HYPE. Stop trading if realized losses reach $5,000 from the high.",
+        "report_cached": false,
+        "rules": {
+          "coins_allowed": null,
+          "coins_forbidden": [
+            "HYPE"
+          ],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": 5000,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "to": 1794182400,
+        "unenforceable": []
+      },
+      "report": {
+        "account": "0x7fdb5021d8e2d5ed85b7f66cb742d496af32259c",
+        "closed_pnl": "-21727.467270",
+        "coins": {
+          "DOT": 1793665829920,
+          "HYPE": 1793916064489,
+          "NEAR": 1793626698259,
+          "SOL": 1793626680770,
+          "SUI": 1793637195010,
+          "TIA": 1793665461523,
+          "UNI": 1793637210409,
+          "xyz:GOOGL": 1793912172785,
+          "xyz:SNDK": 1793665412009
+        },
+        "fees": "43.492475",
+        "fills": 114,
+        "first_long": {
+          "HYPE": 1793916064489,
+          "xyz:GOOGL": 1793912172785,
+          "xyz:SNDK": 1793665412009
+        },
+        "first_short": {
+          "DOT": 1793665829920,
+          "NEAR": 1793626698259,
+          "SOL": 1793626680770,
+          "SUI": 1793637195010,
+          "TIA": 1793665461523,
+          "UNI": 1793637210409
+        },
+        "from": 1793577600,
+        "funding": "-197.629168",
+        "funding_payments": 444,
+        "markets": [
+          "perp",
+          "hip3"
+        ],
+        "max_drawdown": "22962.563384",
+        "max_position": {
+          "DOT": [
+            "10501.339430",
+            1793665829920
+          ],
+          "HYPE": [
+            "70714.458000",
+            1793916064489
+          ],
+          "NEAR": [
+            "6805.095000",
+            1793626698539
+          ],
+          "SOL": [
+            "7080.375000",
+            1793626680770
+          ],
+          "SUI": [
+            "5311.140000",
+            1793637195063
+          ],
+          "TIA": [
+            "5362.440000",
+            1793665461523
+          ],
+          "UNI": [
+            "5425.125000",
+            1793637898036
+          ],
+          "xyz:GOOGL": [
+            "22352.000000",
+            1794174955175
+          ],
+          "xyz:SNDK": [
+            "27407.500000",
+            1793665412009
+          ]
+        },
+        "net_pnl": "-21968.588913",
+        "non_usdc_fee_fills": 0,
+        "open_at_end": [
+          "xyz:GOOGL"
+        ],
+        "to": 1794182400
+      }
+    }
+  ],
+  "mandates": [
+    {
+      "label": "perps-no-stocks",
+      "id": 0,
+      "text": "Hyperliquid crypto perps only, no stock or commodity perps, no spot.",
+      "target": 500,
+      "propose": {
+        "hash": "0x77993a4ae494fe38f80281f1bfed83ac8d25e5ec09f7150944311bbaf2527457",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "IDLE",
+          "IDLE",
+          "AGREE",
+          "AGREE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"id\\\":0\\\"rules\\\":{\\\"coins_allowed\\\":null\\\"coins_forbidden\\\":[]\\\"direction\\\":\\\"any\\\"\\\"flat_at_end\\\":false\\\"markets\\\":[\\\"perp\\\",]\\\"max_drawdown_usd\\\":null\\\"max_fills\\\":null\\\"max_position_usd\\\":null}\\\"rules_hash\\\":\\\"d5ec13ac4c4432b0b53a61ea714c6c1f9468a260a1e1149064b6325e7f3cc55c\\\"\\\"unenforceable\\\":[]}\"}"
+      },
+      "state": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "",
+        "paid_allocator": 0,
+        "paid_manager": 0,
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": null,
+          "coins_forbidden": [],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "d5ec13ac4c4432b0b53a61ea714c6c1f9468a260a1e1149064b6325e7f3cc55c",
+        "start": 1794189600,
+        "status": "open",
+        "target_pnl_usd": "500.000000",
+        "text": "Hyperliquid crypto perps only, no stock or commodity perps, no spot.",
+        "unenforceable": []
+      },
+      "accept": {
+        "hash": "0xa86adf275fc539c6f22a8068c2dba9697b21038b002e392e26ce2f7052c605fd",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"id\\\":0\\\"status\\\":\\\"active\\\"}\"}"
+      },
+      "settle": {
+        "hash": "0x29bb8956c58e1a69b4f49b529b373b550997272736d545a1b6d94312382107fa",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"breaches\\\":[]\\\"id\\\":0\\\"net_pnl\\\":\\\"1603.470068\\\"\\\"outcome\\\":\\\"full_fee\\\"\\\"paid_allocator\\\":0\\\"paid_manager\\\":15000000000000000000\\\"report_cached\\\":false}\"}"
+      },
+      "result": {
+        "breaches": [],
+        "id": 0,
+        "net_pnl": "1603.470068",
+        "outcome": "full_fee",
+        "paid_allocator": 0,
+        "paid_manager": "15000000000000000000",
+        "report_cached": false
+      },
+      "final": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "full_fee",
+        "paid_allocator": 0,
+        "paid_manager": "15000000000000000000",
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": null,
+          "coins_forbidden": [],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "d5ec13ac4c4432b0b53a61ea714c6c1f9468a260a1e1149064b6325e7f3cc55c",
+        "start": 1794189600,
+        "status": "settled",
+        "target_pnl_usd": "500.000000",
+        "text": "Hyperliquid crypto perps only, no stock or commodity perps, no spot.",
+        "unenforceable": []
+      }
+    },
+    {
+      "label": "btc-eth-only",
+      "id": 1,
+      "text": "BTC와 ETH만 거래. 다른 코인은 안 됨.",
+      "target": 500,
+      "propose": {
+        "hash": "0x51fd237a8de2f7f5f436cb90b15025399c5855bde73f600e4088dad8792e0201",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "AGREE",
+          "AGREE",
+          "IDLE",
+          "IDLE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"id\\\":1\\\"rules\\\":{\\\"coins_allowed\\\":[\\\"BTC\\\",\\\"ETH\\\",]\\\"coins_forbidden\\\":[]\\\"direction\\\":\\\"any\\\"\\\"flat_at_end\\\":false\\\"markets\\\":[\\\"perp\\\",\\\"hip3\\\",\\\"spot\\\",\\\"outcome\\\",]\\\"max_drawdown_usd\\\":null\\\"max_fills\\\":null\\\"max_position_usd\\\":null}\\\"rules_hash\\\":\\\"cb86fe3af4ae38a474c829142ad87470a740958ff77d74065b01b5fd65bf8062\\\"\\\"unenforceable\\\":[]}\"}"
+      },
+      "state": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "",
+        "paid_allocator": 0,
+        "paid_manager": 0,
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": [
+            "BTC",
+            "ETH"
+          ],
+          "coins_forbidden": [],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "cb86fe3af4ae38a474c829142ad87470a740958ff77d74065b01b5fd65bf8062",
+        "start": 1794189600,
+        "status": "open",
+        "target_pnl_usd": "500.000000",
+        "text": "BTC와 ETH만 거래. 다른 코인은 안 됨.",
+        "unenforceable": []
+      },
+      "accept": {
+        "hash": "0x32455f56750d28eebe097e4891482def5628913906fa0e286fa5f67013ffe599",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"id\\\":1\\\"status\\\":\\\"active\\\"}\"}"
+      },
+      "settle": {
+        "hash": "0x7e026c818eb842f047255366e3204e0d0faeb1528d7b4595ddea30d1a1951ab5",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE",
+          "AGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"breaches\\\":[{\\\"coin\\\":\\\"ENA\\\"\\\"rule\\\":\\\"coins_allowed\\\"\\\"time\\\":1794189946991},]\\\"id\\\":1\\\"net_pnl\\\":\\\"1603.470068\\\"\\\"outcome\\\":\\\"breach\\\"\\\"paid_allocator\\\":15000000000000000000\\\"paid_manager\\\":0\\\"report_cached\\\":true}\"}"
+      },
+      "result": {
+        "breaches": [
+          {
+            "coin": "ENA",
+            "rule": "coins_allowed",
+            "time": 1794189946991
+          }
+        ],
+        "id": 1,
+        "net_pnl": "1603.470068",
+        "outcome": "breach",
+        "paid_allocator": "15000000000000000000",
+        "paid_manager": 0,
+        "report_cached": true
+      },
+      "final": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "breach",
+        "paid_allocator": "15000000000000000000",
+        "paid_manager": 0,
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": [
+            "BTC",
+            "ETH"
+          ],
+          "coins_forbidden": [],
+          "direction": "any",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "cb86fe3af4ae38a474c829142ad87470a740958ff77d74065b01b5fd65bf8062",
+        "start": 1794189600,
+        "status": "settled",
+        "target_pnl_usd": "500.000000",
+        "text": "BTC와 ETH만 거래. 다른 코인은 안 됨.",
+        "unenforceable": []
+      }
+    },
+    {
+      "label": "cancelled",
+      "id": 2,
+      "text": "BTC only, long only.",
+      "target": 500,
+      "propose": {
+        "hash": "0xe32c01b70540531c05cc80ee6626c417c202a6d3020db9d29b11edb8b1e1f9f8",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "DISAGREE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"{\\\"id\\\":2\\\"rules\\\":{\\\"coins_allowed\\\":[\\\"BTC\\\",]\\\"coins_forbidden\\\":[]\\\"direction\\\":\\\"long_only\\\"\\\"flat_at_end\\\":false\\\"markets\\\":[\\\"perp\\\",\\\"hip3\\\",\\\"spot\\\",\\\"outcome\\\",]\\\"max_drawdown_usd\\\":null\\\"max_fills\\\":null\\\"max_position_usd\\\":null}\\\"rules_hash\\\":\\\"6a847c674764bfabb994803b0a87921742457b6d91e675e220e7c1410e24834a\\\"\\\"unenforceable\\\":[]}\"}"
+      },
+      "state": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "",
+        "paid_allocator": 0,
+        "paid_manager": 0,
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": [
+            "BTC"
+          ],
+          "coins_forbidden": [],
+          "direction": "long_only",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "6a847c674764bfabb994803b0a87921742457b6d91e675e220e7c1410e24834a",
+        "start": 1794189600,
+        "status": "open",
+        "target_pnl_usd": "500.000000",
+        "text": "BTC only, long only.",
+        "unenforceable": []
+      },
+      "cancel": {
+        "hash": "0xb2a2ae0dc447bf89feec3b144d2eeb3b2a11d153c419f68c9e49664fb5769656",
+        "status": "ACCEPTED",
+        "exec": "SUCCESS",
+        "error": null,
+        "votes": [
+          "AGREE",
+          "AGREE",
+          "IDLE",
+          "AGREE",
+          "IDLE"
+        ],
+        "rotations_left": "3",
+        "message": "{\"readable\":\"10000000000000000000\"}"
+      },
+      "final": {
+        "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+        "allocator": "0x6E2d5a720C33848a959d688064b76E7985460d19",
+        "bond": "5000000000000000000",
+        "end": 1794193200,
+        "manager": "0x11f02C2ccb28aEce36e89e4E3ad57845aaE30913",
+        "outcome": "",
+        "paid_allocator": "10000000000000000000",
+        "paid_manager": 0,
+        "pot": "10000000000000000000",
+        "rules": {
+          "coins_allowed": [
+            "BTC"
+          ],
+          "coins_forbidden": [],
+          "direction": "long_only",
+          "flat_at_end": false,
+          "markets": [
+            "perp",
+            "hip3",
+            "spot",
+            "outcome"
+          ],
+          "max_drawdown_usd": null,
+          "max_fills": null,
+          "max_position_usd": null
+        },
+        "rules_hash": "6a847c674764bfabb994803b0a87921742457b6d91e675e220e7c1410e24834a",
+        "start": 1794189600,
+        "status": "cancelled",
+        "target_pnl_usd": "500.000000",
+        "text": "BTC only, long only.",
+        "unenforceable": []
+      }
+    }
+  ],
+  "start": 1794189600,
+  "end": 1794193200,
+  "live_report": {
+    "account": "0x418aa6bf98a2b2bc93779f810330d88cde488888",
+    "closed_pnl": "1743.185000",
+    "coins": {
+      "BTC": 1794191041571,
+      "ENA": 1794189946991,
+      "ETH": 1794189600012
+    },
+    "fees": "7.759735",
+    "fills": 5,
+    "first_long": {
+      "ENA": 1794189946991
+    },
+    "first_short": {
+      "BTC": 1794191041571,
+      "ETH": 1794189600012
+    },
+    "from": 1794189600,
+    "funding": "-131.955197",
+    "funding_payments": 3,
+    "markets": [
+      "perp"
+    ],
+    "max_drawdown": "212.517322",
+    "max_position": {
+      "BTC": [
+        "6524262.500000",
+        1794191041571
+      ],
+      "ENA": [
+        "34807.500000",
+        1794189946991
+      ]
+    },
+    "net_pnl": "1603.470068",
+    "non_usdc_fee_fills": 0,
+    "open_at_end": [
+      "BTC",
+      "ENA",
+      "ETH"
+    ],
+    "to": 1794193200
+  }
+}
