@@ -1,0 +1,6 @@
+{
+  "network": "studionet",
+  "deployments": [
+    {"name": "MandateEscrow", "address": "0x8FcE3984717067A50562fF8ab300f636BAF7A905", "source": "contracts/mandate_escrow.py"}
+  ]
+}
